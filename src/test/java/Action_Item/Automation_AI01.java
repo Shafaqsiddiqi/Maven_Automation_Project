@@ -2,7 +2,7 @@ package Action_Item;
 
 import java.util.ArrayList;
 
-public class Automation_AU01 {
+public class Automation_AI01 {
     public static void main(String[] args) {
         //create an ArrayList for country and iterate through all values using For loop
         ArrayList<String> country = new ArrayList<>();

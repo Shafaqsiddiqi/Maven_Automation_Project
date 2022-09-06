@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite" parallel="none">
+    <test name="Multiple Site Test">
+        <classes>
+            <class name="Day12_060422.Hasan_Selenium_Reusable_Annotations_Boolean_Yahoo" />
+            <class name="Day12_060422.Hasan_Selenium_Reusable_Annotations_GoogleSearch"/>
+        </classes>
+    </test>
+</suite>

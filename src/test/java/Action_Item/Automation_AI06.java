@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 
@@ -168,11 +170,13 @@ public class Automation_AI06 {
         //capture text for invalid member id
         try {
             //capture text for invalid code/error
-            String captureText = driver.findElement(By.xpath("//*[@id='personalInfo_errors']")).getText();
-            System.out.println("captured content is " + captureText);
+            WebDriverWait wait = new WebDriverWait(driver,10);
+           String errorMessage = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='SummaryError_ErrorContent__1j0LP']"))).getText();
+            System.out.println("Error message is " + errorMessage);
         } catch (Exception e) {
-            System.out.println("unable to capture it " + e);
-        }//end of capture text exception
+            System.out.println("unable to capture content " + e);
+        }//end of exception
+
 
         //close the driver
         driver.close();
@@ -184,6 +188,9 @@ public class Automation_AI06 {
         } catch (Exception e) {
             System.out.println("unable to switch " + e);
         }//end of switch tab exception
+
+        //close the driver
+        driver.close();
 
     }//end of main
 }//end of class

@@ -1,5 +1,6 @@
 package Day7_051522;
 
+import Day4_050722.SplitMessage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
+
+import java.sql.SQLOutput;
 
 public class Exception_MortgageCalc {
     public static void main(String[] args) throws InterruptedException {
@@ -74,7 +77,6 @@ public class Exception_MortgageCalc {
             //print out the exception
             System.out.println("Unable to locate monthly payment text " + e);
         }//end of monthly payment exception
-
 
 
 

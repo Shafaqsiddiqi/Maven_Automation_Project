@@ -68,18 +68,6 @@ public class Reusable_Actions {
         }
     }//end of sendkeys method
 
-        public static void sendKeysAction(WebDriver driver,String xpath,String elementName){
-            WebDriverWait wait = new WebDriverWait(driver,10);
-            try{
-                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
-                element.click();
-                element.clear();
-                element.sendKeys();
-            } catch (Exception e) {
-                System.out.println("Unable to click on element " + elementName + " " + e);
-            }
-        }//end of sendkeys method
-
 
     //create a click by index method
     public static void clickByIndexAction(WebDriver driver,String xpath, int indexNumber, String elementName){
