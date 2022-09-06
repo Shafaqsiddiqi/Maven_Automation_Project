@@ -1,6 +1,6 @@
 package Day4_050722;
 
-public class HasanDay4_Practice {
+public class HasanJava_SplitMsg {
     public static void main(String[] args) {
         // LEARNING ABOUT STRING SPLITS
         // Splits in Java: Split command allows you to divide/separate from a string
