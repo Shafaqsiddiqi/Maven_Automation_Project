@@ -1,5 +1,7 @@
 package Day1_042322;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 public class Hasanday1_practice {
     public static void main(String[] args) {
         //1. printing out welcome to automation class
@@ -37,6 +39,13 @@ public class Hasanday1_practice {
 
         //2.6 Printing out concatenated statement of multiple string variables and int variables and comments
         System.out.println(myVariable + ", my IT professor is " + myVariable2 + ". My role number is " + myNumber + " and my zipcode is " + myZipcode + ".");
+
+        int a = 2;
+        int b = 3;
+        int larger = a>b?a:b;
+        System.out.println("a is "+ a + " b is " +b +"and " + larger +" is bigger ");
+
+
 
 
     }//end of main method
