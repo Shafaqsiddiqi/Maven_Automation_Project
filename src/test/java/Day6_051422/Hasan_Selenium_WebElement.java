@@ -17,7 +17,7 @@ public class Hasan_Selenium_WebElement {
 
         // WebElement
         driver.navigate().to("https://www.mortgagecalculator.org");
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
         // Click,clear and enter new data on home value field
         WebElement homeValue = driver.findElement(By.xpath("//*[@id='homeval']"));
